@@ -34,5 +34,5 @@ def main():
         print('op', op)
         result += sum(op[j] * (i + 1)**(len(op) - 1 - j) for j in range(len(op) - 1, -1, -1))
         i += 1
-    print('result', numpy.ceil(result))    
+    print('result', round(result))    
 main()
